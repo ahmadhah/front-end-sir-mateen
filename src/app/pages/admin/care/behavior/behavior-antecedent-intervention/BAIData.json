@@ -1,0 +1,186 @@
+[
+    {
+        "name": "Aggression to Clients",
+        "category": "Assualtive",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2021-05-30",
+        "status": "Discontinued",
+        "type": "Behavior"
+    },
+    {
+        "name": "Aggression to Staff",
+        "category": "Assualtive",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2022-09-31",
+        "status": "Active",
+        "type": "Behavior"
+    },
+    {
+        "name": "Animal Cruelty",
+        "category": "Assualtive",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2021-12-12",
+        "status": "Discontinued",
+        "type": "Behavior"
+    },
+    {
+        "name": "False Accusations",
+        "category": "Speech",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2021-02-02",
+        "status": "Active",
+        "type": "Behavior"
+    },
+    {
+        "name": "Disorganized Thoughts",
+        "category": "Mental Health",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2021-03-31",
+        "status": "Active",
+        "type": "Behavior"
+    },
+    {
+        "name": "Restlessness",
+        "category": "Mental Health",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2021-05-30",
+        "status": "Discontinued",
+        "type": "Behavior"
+    },
+    {
+        "name": "Finger Rolling",
+        "category": "Obsessive-Compulsive",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2022-05-30",
+        "status": "Discontinued",
+        "type": "Behavior"
+    },
+    {
+        "name": "Lint Picking",
+        "category": "Obsessive-Compulsive",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2020-05-30",
+        "status": "Active",
+        "type": "Behavior"
+    },
+    {
+        "name": "Clothing",
+        "category": "Property Destruction",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2021-05-20",
+        "status": "Discontinued",
+        "type": "Behavior"
+    },
+    {
+        "name": "Furniture",
+        "category": "Property Destruction",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2021-05-23",
+        "status": "Discontinued",
+        "type": "Behavior"
+    },
+    {
+        "name": "Slaming Doors",
+        "category": "Property Destruction",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2021-05-24",
+        "status": "Active",
+        "type": "Behavior"
+    },
+    {
+        "name": "Blocking",
+        "category": "Physical",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2021-09-25",
+        "status": "Discontinued",
+        "type": "Intervention"
+    },
+    {
+        "name": "Minimize Interaction",
+        "category": "Passive",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2023-05-24",
+        "status": "Discontinued",
+        "type": "Intervention"
+    },
+    {
+        "name": "Planned Ignoring",
+        "category": "Passive",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2011-12-12",
+        "status": "Discontinued",
+        "type": "Intervention"
+    },
+    {
+        "name": "Isolation",
+        "category": "Physical",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2023-02-25",
+        "status": "Discontinued",
+        "type": "Intervention"
+    },
+    {
+        "name": "Choice Selection",
+        "category": "Proactive",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2021-12-30",
+        "status": "Active",
+        "type": "Intervention"
+    },
+    {
+        "name": "Exercise",
+        "category": "Proactive",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2021-11-20",
+        "status": "Active",
+        "type": "Intervention"
+    },
+    {
+        "name": "Delaying",
+        "category": "Non-Complaint",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2021-11-22",
+        "status": "Discontinued",
+        "type": "Antecedent"
+    },
+    {
+        "name": "Cleaning Room",
+        "category": "Positive Behaviors",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2021-11-20",
+        "status": "Active",
+        "type": "Antecedent"
+    },
+    {
+        "name": "Apologize",
+        "category": "Positive Behaviors",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2021-11-20",
+        "status": "Discontinued",
+        "type": "Antecedent"
+    },
+    {
+        "name": "Refusal",
+        "category": "Non-Complaint",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2021-09-01",
+        "status": "Active",
+        "type": "Antecedent"
+    },
+    {
+        "name": "Eating Slow",
+        "category": "Positive Behaviors",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2021-11-20",
+        "status": "Discontinued",
+        "type": "Antecedent"
+    },
+    {
+        "name": "Cutting Self",
+        "category": "Self Injurous",
+        "enteredBy": "EasyNoteCare System Admin",
+        "lastUpdateBy": "EasyNoteCare System Admin on 2020-11-20",
+        "status": "Active",
+        "type": "Antecedent"
+    }
+]
