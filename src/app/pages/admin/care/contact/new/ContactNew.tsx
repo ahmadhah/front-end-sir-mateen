@@ -1,4 +1,4 @@
-import { useHistory, Link } from 'react-router-dom';
+import { useHistory, Link,useParams } from 'react-router-dom';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import axios from 'axios'
 import * as Yup from 'yup'
@@ -108,13 +108,28 @@ const ContactNew = () => {
     const [showMailAddress, setShowMailAddress] = useState(false)
     const [showIsGuardian, setShowIsGuardian] = useState(false)
     const [individualList, setIndividualList] = useState<{individualIDNumber: string; individual: string;}[]>([])
-
+const [showAlert, setshowAlert] = useState(false);
+const params = useParams();
+const [individual, setindividual] = useState();
     useEffect(() => {
         setIndividualList(Inddata)
+
+
+     
+    //    setdata(  )
+// console.log('data here',localStorage.getItem("data"))
     },[])
     return (
         <div>
-            <div className="d-flex justify-content-center">
+                                      {   showAlert&&   <div className="alert alert-success d-flex align-items-center p-5 mb-10">
+  
+  
+  <div className="d-flex flex-column">
+    <h5 className="mb-1">Congratulations!</h5>
+    <span>Form Submitted Successfully.</span>
+  </div>
+</div>}
+          { !showAlert&& <div className="d-flex justify-content-center">
                 <div className='card card-flush h-md-100 w-100'>
                     <div className="d-flex justify-content-center w-100">
                         <div className="card-header w-75">
@@ -122,7 +137,9 @@ const ContactNew = () => {
                                 <h2 className="fw-bolder">Add New Contact</h2>
                             </div>
                             <div className="btn btn-icon btn-sm btn-active-icon-primary mt-6">
-                                <Link to={'/care/contact/list'} className="btn btn-light btn-active-primary my-1 me-2" >Individuals</Link>
+                                <Link to={'/care/contact/list'} className="btn btn-light btn-active-primary my-1 me-2" >{Inddata.find((obj)=>{
+if(obj.formID==window.location.pathname.split('/')[4])return obj
+})?.individual}</Link>
                             </div>
                         </div>
                     </div>
@@ -170,15 +187,26 @@ const ContactNew = () => {
                         }}
                         validationSchema={registrationSchema}
                         onSubmit={(values, { setSubmitting }) => {
+                            console.log('data recieved.....',values)
+setshowAlert(true)
+
+                            
                             setTimeout(() => {
-                                console.log(values)
+                            setshowAlert(false)
+
                                 // setSubmitting(false)
                                 // alert(JSON.stringify(values, null, 2));
-                            }, 400);
+                                // data.push(values?values||)
+
+                                // localStorage.setItem('data', JSON.stringify(data));
+                        
+                                // console.log('new data' ,  localStorage.getItem('data'))
+                            }, 4000);
                         }}
                     >
-                        {({ isSubmitting, resetForm }) => (
+                        {({ isSubmitting, resetForm,  }) => (
                             <div className="card-body d-flex justify-content-center py-1">
+
                                 <Form className='form w-75 fv-plugins-bootstrap5 fv-plugins-framework'>
                                     <div className="d-flex">
                                         <label className="w-25 form-check form-check-sm form-check-custom form-check-solid me-5 me-lg-20">Select Individual</label>
@@ -515,7 +543,7 @@ const ContactNew = () => {
                                             : null
                                     }
                                     <div className="d-flex justify-content-center mt-2">
-                                        <button type="submit" className='btn btn-primary btn-active-secondary mx-2'>Add Contact</button>
+                                        <button type="submit" className='btn btn-primary btn-active-secondary mx-2' >Add Contact</button>
                                         <button type="reset" className="btn btn-primary btn-active-secondary" onClick={() => resetForm()}>Reset</button>
                                     </div>
                                 </Form>
@@ -523,7 +551,7 @@ const ContactNew = () => {
                         )}
                     </Formik>
                 </div>
-            </div>
+            </div>}
         </div>
     )
 }

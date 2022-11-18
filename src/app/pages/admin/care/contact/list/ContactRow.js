@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
 const ContactRow = ({ contact, setEditContactData, setDeleteContactId }) => {
+    // console.log(contact)
     return (
         <tr>
             <td>
                 <Link to={{
-                    pathname: `/care/contact/new/${contact.formID,contact}`,
+                    pathname: `/care/contact/new/${contact.formID}`,
                     state: contact
                 }}>
                     <span className="text-gray-800 text-hover-primary mb-1"
@@ -17,7 +18,7 @@ const ContactRow = ({ contact, setEditContactData, setDeleteContactId }) => {
                 </Link>
             </td>
             <td>
-                <Link to={{
+            <Link to={{
                     pathname: `/care/contact/new/${contact.formID}`,
                     state: contact
                 }}>
@@ -51,6 +52,186 @@ const ContactRow = ({ contact, setEditContactData, setDeleteContactId }) => {
                     {contact.email}
                 </span>
             </td>
+            <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.title}
+                </span>
+            </td>   <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.ssn
+}
+                </span>
+            </td>   <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.socialSecurityNumber}
+                </span>
+            </td>   <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.serviceCountyState}
+                </span>
+            </td>   <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.serviceCounty
+}
+                </span>
+            </td>   <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.residentialCounty}
+                </span>
+            </td>   <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.residentialCountyState
+}
+                </span>
+            </td>
+            <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.residentialAddr
+}
+                </span>
+            </td>
+            <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.race
+}
+                </span>
+            </td>
+            <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.phoneNumber
+}
+                </span>
+            </td>
+            <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.medicareNumber
+}
+                </span>
+            </td>
+            <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.medicaidNumber
+}
+                </span>
+            </td>
+            <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.mailingaddress
+}
+                </span>
+            </td>
+
+            <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.mailingZipCode
+}
+                </span>
+            </td>
+
+            <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.mailingState
+}
+                </span>
+            </td>
+
+            <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.mailingSecondaryPhone
+}
+                </span>
+            </td>
+
+            <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.mailingPrimaryPhone
+}
+                </span>
+            </td>
+
+            <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.mailingInCareOf
+}
+                </span>
+            </td>
+            <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.mailingCountry
+}
+                </span>
+            </td>
+            <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.mailingCity
+}
+                </span>
+            </td>
+            {/* <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.mailingAddr
+}
+                </span>
+            </td> */}
+            <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.mailingAdditionalPhone
+}
+                </span>
+            </td>
+            <td>
+                <span className="text-gray-800 text-hover-primary mb-1"
+                    style={{ cursor: "pointer" }}
+                >
+                    {contact.lastUpdatedBy
+}
+                </span>
+            </td>
+
             {/*<td className="text-gray-800 text-hover-primary mb-1">
                 <button data-bs-toggle="modal" data-bs-target="#kt_modal_edit_contact"
                     className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'

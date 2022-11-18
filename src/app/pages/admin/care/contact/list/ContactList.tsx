@@ -152,17 +152,46 @@ const ContactList = () => {
                                     id='kt_contacts_table'
                                 >
                                     <thead>
-                                        <tr className='text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0'>
+                                        <tr className='text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0'>                              
                                             <th className="min-w-100px">Form ID</th>
                                             <th className="min-w-200px">Individual</th>
                                             <th className="min-w-200px">Social Security Number</th>
                                             <th className="min-w-200px">Status</th>
                                             <th className='min-w-100px'>email</th>
+                                            <th className="min-w-100px">Title</th>
+                                            <th className="min-w-200px">ssn
+</th>
+                                            <th className="min-w-200px">Social Security Number</th>
+                                            <th className="min-w-200px">Service County State</th>
+                                            <th className='min-w-100px'>Service County</th>
+<th className="min-w-200px">residentialCounty</th>
+<th className="min-w-200px">residentialCountyState
+</th>
+<th className="min-w-200px">residentialAddr
+</th>
+<th className="min-w-200px">race</th>
+<th className="min-w-200px">phoneNumber</th>
+<th className="min-w-200px">medicareNumber</th>
+<th className="min-w-200px">medicaidNumber</th>
+<th className="min-w-200px">mailingaddress</th>
+<th className="min-w-200px">mailingZipCode</th>
+<th className="min-w-200px">mailingState</th>
+<th className="min-w-200px">mailingSecondaryPhone</th>
+<th className="min-w-200px">mailingPrimaryPhone</th>
+<th className="min-w-200px">mailingInCareOf</th>
+<th className="min-w-200px">mailingCountry</th>
+<th className="min-w-200px">mailingCity</th>
+<th className="min-w-200px">mailingAddr</th>
+<th className="min-w-200px">mailingAdditionalPhone</th>
+<th className="min-w-200px">lastUpdatedBy</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    
                                         {contacts.map((contact, index) => (
+
                                             <Fragment key={index}>
+                                           
                                                 <ContactRow contact={contact} setEditContactData={setEditContactData} setDeleteContactId={setDeleteContactId} />
                                             </Fragment>
                                         ))}
