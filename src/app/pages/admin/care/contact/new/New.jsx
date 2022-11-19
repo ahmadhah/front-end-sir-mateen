@@ -5,12 +5,14 @@ import { useState, Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import data from '../../../../../../mock-data.json'
 import ReadOnlyRow from './ReadOnlyRow'
-
+import ContactNew from '../new/ContactNew'
 export default function New() {
   const [contacts, setContacts] = useState(data)
+const [showContactNew, setshowContactNew] = useState(false);
 
   return (
-    <div>
+   <>
+   {showContactNew?<ContactNew />: <div>
       <div className='card mb-5 col-mb-10' id='kt_content'>
         <div className='post d-flex flex-column-fluid' id='kt_post'>
           <div id='kt_content_container' className='container-xxl'>
@@ -79,7 +81,7 @@ export default function New() {
                     {contacts.map((contact) => (
                       <Fragment>
                         <ReadOnlyRow
-                          contact={contact}
+                          contact={contact} setshowContactNew={setshowContactNew} 
                         />
                       </Fragment>
                     ))}
@@ -118,7 +120,8 @@ export default function New() {
             </div>
         {/*end::Card*/}
       </div>
-    </div>
+    </div>}
+   </>
 
   )
 }

@@ -2,15 +2,18 @@
 /* eslint-disable */
 import React from "react";
 
-export default function ReadOnlyRow({ contact }) {
+export default function ReadOnlyRow({ contact,setshowContactNew}) {
+
   return (
-    <tr>
-      <td>
-        <a href="/clientdetails" className="text-gray-800 text-hover-primary mb-1">{contact.name}</a>
+    <tr onClick={()=>{setshowContactNew(true)
+     sessionStorage.setItem('name',contact.name)
+    }}   style={{ cursor: "pointer" }}> 
+      <td > 
+       {contact.name}
       </td>
       <td>
         <a
-          href='#'
+          
           className="text-gray-800 text-hover-primary mb-1"
         >
           {contact.gender}
@@ -18,7 +21,7 @@ export default function ReadOnlyRow({ contact }) {
       </td>
       <td>
         <a
-          href='#'
+      
           className="text-gray-800 text-hover-primary mb-1"
         >
           {contact.address}
@@ -60,6 +63,7 @@ export default function ReadOnlyRow({ contact }) {
         {contact.clienttype}
       </td>
     </tr>
+    
   )
 
 

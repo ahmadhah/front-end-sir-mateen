@@ -22,13 +22,15 @@ function ContactIndex() {
                 <Route path="/care/contact/new">
                     {/* <New /> */}
                     {/* <NewContact /> */}
-                    <ContactNew />
+                  
+                    <New/>
                 </Route>
+                
                 <Route path="/care/contact/listing/:id" component={ListContacts}/>
                 <Route path="/care/contact/edit/:id" component={EditContacts} />
-                {/* <Route path="/care/contact/new"> */}
-                {/* <New /> */}
-                {/* </Route> */}
+                {/* <Route path="/care/contact/new/23">
+                < ContactNew />
+                </Route> */}
                 {/* <Route path="/care/contact/list">
                     <List />
                 </Route>

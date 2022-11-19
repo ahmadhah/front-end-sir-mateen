@@ -137,9 +137,7 @@ const [individual, setindividual] = useState();
                                 <h2 className="fw-bolder">Add New Contact</h2>
                             </div>
                             <div className="btn btn-icon btn-sm btn-active-icon-primary mt-6">
-                                <Link to={'/care/contact/list'} className="btn btn-light btn-active-primary my-1 me-2" >{Inddata.find((obj)=>{
-if(obj.formID==window.location.pathname.split('/')[4])return obj
-})?.individual}</Link>
+                                <Link to={'/care/contact/list'} className="btn btn-light btn-active-primary my-1 me-2" >{ sessionStorage.getItem('name')}</Link>
                             </div>
                         </div>
                     </div>

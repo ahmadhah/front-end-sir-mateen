@@ -20,7 +20,7 @@ function ContactHeader() {
                                     }
                                     to='/care/contact/list'
                                 >
-                                    List
+                                List
                                 </Link>
                             </li>
                             <li className='nav-item'>
@@ -31,7 +31,7 @@ function ContactHeader() {
                                     }
                                     to='/care/contact/new'
                                 >
-                                    Create New Contact
+                                    New
                                 </Link>
                             </li>
                             {/* <li className='nav-item'>

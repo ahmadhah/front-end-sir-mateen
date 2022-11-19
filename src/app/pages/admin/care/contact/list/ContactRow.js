@@ -4,10 +4,10 @@ const ContactRow = ({ contact, setEditContactData, setDeleteContactId }) => {
     return (
         <tr>
             <td>
-                <Link to={{
+                {/* <Link to={{
                     pathname: `/care/contact/new/${contact.formID}`,
                     state: contact
-                }}>
+                }}> */}
                     <span className="text-gray-800 text-hover-primary mb-1"
                         // data-bs-toggle="modal" data-bs-target="#kt_modal_edit_contact"
                         // onClick={() => setEditContactData(contact)}
@@ -15,13 +15,13 @@ const ContactRow = ({ contact, setEditContactData, setDeleteContactId }) => {
                     >
                         {contact.formID}
                     </span>
-                </Link>
+                {/* </Link> */}
             </td>
             <td>
-            <Link to={{
+            {/* <Link to={{
                     pathname: `/care/contact/new/${contact.formID}`,
                     state: contact
-                }}>
+                }}> */}
                     <span className="text-gray-800 text-hover-primary mb-1"
                         // data-bs-toggle="modal" data-bs-target="#kt_modal_edit_contact"
                         // onClick={() => setEditContactData(contact)}
@@ -29,7 +29,7 @@ const ContactRow = ({ contact, setEditContactData, setDeleteContactId }) => {
                     >
                         {contact.individual}
                     </span>
-                </Link>
+                {/* </Link> */}
             </td>
             <td>
                 <span className="text-gray-800 text-hover-primary mb-1"
